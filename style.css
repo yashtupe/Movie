@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+.one .topnav .logo{
+    margin-top: 10px;
+}
+
+/* .logo-img {
+    width: 70px;
+    height: 45px;
+}
+
+.topnav a img {
+    position: relative;
+    top: -12px;
+    left: -16px;
+    text-align: center;
+    border-radius: 10px;
+   
+
+}
+.logo-link {
+    width: 40px;
+    height: 20px;
+    padding: 0;
+    background: transparent;
+
+} */
+
+
+.topnav .links , .four .links{
+    display: block;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    margin: 16px 25px 0px;
+    float: left;
+}
+
+.topnav .logo,.four .logo {
+    width: 60px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    height: 40px;
+    float: left;
+    border-radius: 6px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: goldenrod;
+    overflow: hidden;
+}
+
+.simplelinks a {
+    float: left;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+
+
+
+.simplelinks a:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: greenyellow;
+    color: black;
+}
+
+
+/* slideshow */
+
+
+
+.mySlides {
+    display: none
+}
+
+.img-slide {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* movies cards */
+.three {
+    height: 100vh;
+    width: 100%;
+}
+
+.three-action-container {
+    position: relative;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.three-drama-container {
+    position: relative;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 50vh;
+    top: 80px;
+}
+
+.three-sifi-container {
+    position: relative;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 50vh;
+    top: 150px;
+}
+
+.column-acards {
+    display: inline-flex;
+
+    margin-top: 50px;
+
+}
+
+.column-cards {
+    cursor: pointer;
+    margin: 10px;
+    background: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.span-cards {
+    color: black;
+}
+
+
+.four {
+    width: 100%;
+    height: 80px;
+    background: goldenrod;
+    position: relative;
+    top: 600px;
+}
+
+.footer {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-img {
+    width: 60px;
+    height: 40px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.four span {
+    position: relative;
+    top: 30px;
+    left: 15px;
+}

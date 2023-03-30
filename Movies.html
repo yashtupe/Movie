@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background: #000;
+        }
+        .four {
+            position: relative;
+            top: 50px;
+
+        }
+
+        .film-section-card-desc {
+            color: black;
+        }
+
+        .film-section {
+            width: 100%;
+
+        }
+
+        .film-section-cards {
+            display: flex;
+            margin: 20px;
+
+        }
+
+        .search {
+            width: 100px;
+
+        }
+
+        .film-section-card {
+            background: white;
+            text-align: center;
+            margin: 10px;
+            width: 100%;
+        }
+
+
+        .menu-button {
+            text-align: center;
+            background-color: gold;
+            color: black;
+            font-size: 16px;
+            font-weight: bolder;
+            width: 160px;
+            height: 38px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 4px;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .menu-text .search {
+            margin-left: 760px;
+            margin-top: -54px;
+            position: absolute;
+            height: 40px;
+            margin-right: 55px;
+            border: rgb(24, 23, 21);
+            border-radius: 4px;
+            border-style: double;
+            width: 1059px;
+            background-color: gold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            color: black;
+        }
+
+        .text-search {
+            position: absolute;
+            margin-top: -42px;
+            padding: 0px 1784px;
+            width: 50%;
+        }
+
+        .text-search span {
+            color: black;
+        }
+
+        .movie-menu {
+            padding: 15px 42px;
+            width: 30px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            color: black;
+            background-color: #f9f9f9;
+            position: absolute;
+            min-width: 158px;
+            z-index: 1;
+        }
+
+        .dropdown-image span {
+            position: absolute;
+            margin-left: 110px;
+            margin-top: -25px;
+            color: black;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 12px 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 2px;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        .movie-menu:hover .dropdown-menu {
+            margin-top: 3px;
+            display: block;
+        }
+
+        .menu-text span {
+            position: absolute;
+            margin-top: -40px;
+            margin-left: 1780px;
+            color: black;
+        }
+
+        .movie-menu .menu-button span {
+            color: black;
+        }
+
+        footer {
+
+            margin-top: 20px;
+        }
+
+        footer .copyright {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            margin-top: 100%;
+        }
+
+        footer .copyright p {
+            margin: 0 10px;
+            color: rgb(63, 63, 63);
+            ;
+            font-size: 16px;
+        }
+
+        .menu-text {
+            width: 100px;
+            position: relative;
+            right: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="one">
+        <div class="topnav">
+
+            <img class="logo" src="./365ep.jpg" alt="Logo">
+            </a>
+            <div class="simplelinks">
+                <a href="./home.html">Home</a>
+                <a href="./Movies.html" class="active">Movies</a>
+                <a href="#Tv Series">Tv Series</a>
+                <a href="#Audio">Audio</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>
+            <a href="./signup.html" class="btn btn-primary btn-lg float-end mt-2 me-2" 
+            aria-disabled="true">SignIn</a>
+        <a href="./signIn.html" class="btn btn-primary btn-lg float-end mt-2 me-2" 
+            aria-disabled="true">SignUp</a>
+        </div>
+    </div>
+
+
+    <!-- slideshow -->
+    <div class="two">
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img class="img-slide" src="./Movies section/abc2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img class="img-slide" src="./Movies section/abc3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img class="img-slide" src="./Movies section/abc1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img class="img-slide" src="./Movies section/abc4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img class="img-slide" src="./Movies section/abc5.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <!-- Genre button -->
+    <div class="movie-menu">
+        <button class="menu-button" id="dropbtn"><span id="genreText">Genre</span></button>
+        <div class="dropdown-menu">
+            <a onclick="getMediaPosters(this.text)">All</a>
+            <a onclick="getMediaPosters(this.text)">Action</a>
+            <a onclick="getMediaPosters(this.text)">Drama</a>
+            <a onclick="getMediaPosters(this.text)">Sci-Fi</a>
+
+        </div>
+        <div onclick="side_slide(-1)" class="dropdown-image">
+            <span class="fa fa-caret-down"></span>
+        </div>
+    </div>
+
+    <!-- Search button -->
+    <div class="menu-text">
+        <input type="text" class="search" id="mysearch" placeholder="Search your favourite movie title"
+            oninput="updateResults()">
+        <span class="fa fa-search"></span>
+    </div>
+
+    <!-- Popular in Action Section -->
+    <div class="film-section">
+        <div class="film-section-cards" id="movies-action">
+            <div class="film-section-card">
+                <img src="./action/oop1.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./action/oop2.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./action/oop3.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./action/oop4.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./action/oop5.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./action/oop6.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular in Drama Section -->
+        <div class="film-section-cards" id="movies-drama">
+            <div class="film-section-card">
+                <img src="./drama/oop10.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./drama/oop7.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./drama/oop8.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./drama/oop9.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./drama/oop11.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./drama/oop12.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular in Sci-Fi Section -->
+        <div class="film-section-cards" id="movies-scifi">
+            <div class="film-section-card">
+                <img src="./sifi/oop13.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./sifi/oop14.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./sifi/oop15.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./sifi/oop16.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./sifi/oop17.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+            <div class="film-section-card">
+                <img src="./sifi/oop18.jpg" alt="" />
+                <div class="film-section-card-desc">
+                    <h4 class="film-name">
+                        Title
+                    </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <div class="four">
+            <a href="./home.html" class="links">
+                <img class="logo" src="./365ep.jpg" alt="Logo">
+            </a><span>Powered by 365 Entertainment Portal 2019. All Rights Reserved.</span>
+        </div>
+
+</body>
+
+<!-- slideshow -->
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    var indexValue = 1;
+    showImg(indexValue);
+
+    function btm_slide(e) {
+        showImg((indexValue = e));
+    }
+
+    function side_slide(e) {
+        showImg((indexValue += e));
+    }
+
+    function showImg(e) {
+        var i;
+        const img = document.querySelectorAll(".images img");
+        const sliders = document.querySelectorAll(".btm-sliders span");
+        if (e > img.length) {
+            indexValue = 1;
+        }
+        if (e < 1) {
+            indexValue = img.length;
+        }
+        for (i = 0; i < img.length; i++) {
+            img[i].style.display = "none";
+        }
+        for (i = 0; i < sliders.length; i++) {
+            sliders[i].style.background = "none";
+        }
+        img[indexValue - 1].style.display = "block";
+        sliders[indexValue - 1].style.background = "white";
+    }
+
+
+    var currentGenre = "Genre";
+    var movieTitle;
+
+    function getMediaPosters(selectedGenre) {
+        var countMovies = 0;
+        var mediaCarouselMovies;
+        currentGenre = selectedGenre;
+        document.getElementById("genreText").innerHTML = selectedGenre;
+
+        if (selectedGenre == 'All') {
+            document.getElementById('movies-action').style.display = "flex";
+            document.getElementById('movies-drama').style.display = "flex";
+            document.getElementById('movies-scifi').style.display = "flex";
+            mediaCarouselMovies = document.getElementById("film-section");
+        }
+        console.log(selectedGenre);
+        if (selectedGenre == 'Action') {
+            document.getElementById('movies-action').style.display = "flex";
+            document.getElementById('movies-drama').style.display = "none";
+            document.getElementById('movies-scifi').style.display = "none";
+            mediaCarouselMovies = document.getElementsByClassName("film-section-card");
+        }
+        if (selectedGenre == 'Drama') {
+            document.getElementById('movies-action').style.display = "none";
+            document.getElementById('movies-drama').style.display = "flex";
+            document.getElementById('movies-scifi').style.display = "none";
+            mediaCarouselMovies = document.getElementsByClassName("film-section-card");
+        }
+        if (selectedGenre == 'Sci-Fi') {
+            document.getElementById('movies-action').style.display = "none";
+            document.getElementById('movies-drama').style.display = "none";
+            document.getElementById('movies-scifi').style.display = "flex";
+            mediaCarouselMovies = document.getElementsByClassName("film-section-card");
+        }
+
+        var mediaCarouselMoviesCount = mediaCarouselMovies.length;
+
+        for (var count = 0; count < mediaCarouselMoviesCount; count++) {
+            if (mediaCarouselMovies[count].style.display == "block")
+                countMovies++;
+        }
+        console.log(countMovies);
+
+        //   showNoResultsText(countMovies);
+    }
+
+    function updateResults() {
+        var query = document.getElementById('mysearch').value.trim().toLowerCase();
+        var counter = 0;
+
+        if (currentGenre == 'All' || currentGenre == 'Genre') {
+            movieTitle = document.getElementsByClassName('film-name');
+        }
+        if (currentGenre == 'Action') {
+            movieTitle = document.getElementById('movies-action').getElementsByClassName('film-name');
+        }
+        if (currentGenre == 'Drama') {
+            movieTitle = document.getElementById('movies-drama').getElementsByClassName('film-name');
+        }
+        if (currentGenre == 'Sci-Fi') {
+            movieTitle = document.getElementById('movies-scifi').getElementsByClassName('film-name');
+        }
+        for (var name = 0; name < movieTitle.length; name++) {
+            var compareMovieTitles = movieTitle[name].innerHTML.toLowerCase();
+
+            if (compareMovieTitles.indexOf(query) === -1) {
+                movieTitle[name].closest('div.film-section-card').style.display = "none";
+            } else {
+                movieTitle[name].closest('div.film-section-card').style.display = "block";
+                counter++;
+            }
+        }
+
+        // showNoResultsText(counter);
+    }
+
+</script>
+
+</html>
